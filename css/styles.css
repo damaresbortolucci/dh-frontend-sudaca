@@ -1,0 +1,668 @@
+* {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  /*  border: red solid thin; */
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: .8em;
+}
+
+body {
+  height: auto;
+  background-color: black;
+}
+
+
+/* Menu */
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+  transform: translateX(61vw);
+}
+
+/* Menus */
+
+#desktop li {
+  border-color: none;
+  border-radius: 1px;
+  text-align: center;
+}
+#desktop li a {
+  padding: 7px 20px;
+  background-color: #bf2431;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+#desktop li > a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: #f29544;
+}
+#desktop > li > a:active {
+  transform: scale(1.3);
+}
+
+#desktop {
+  display: none;
+}
+
+#desktop ul {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  right: 85px;
+  top: 25px;
+  z-index: 3;
+}
+
+#mobile {
+  background-color: #f2f2f2cc;
+  font-weight: bolder;
+  width: 60vw;
+  height: 100%;
+  left: -61vw;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+ul {
+  position: absolute;
+  width: 100%;
+}
+a {
+  display: block;
+  color: rgb(70, 70, 70);
+  margin-left: 20px;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+a:hover {
+  position: relative;
+  color: #ffc300;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+label > img {
+  width: 80px;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.logo-login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #f2f2f24e;
+  background-color: #f2f2f2;
+}
+
+.logo-login > a > #logo {
+  width: 250px;
+  margin-left: 70px;
+  margin-top: 1rem;
+}
+
+.login {
+  font-size: 14px;
+  margin: 15px;
+  padding: 5px 10px;
+}
+
+#busca {
+  margin: 15px 45px 0 15px;
+}
+
+hr {
+  margin: 20px 0 20px 0;
+  border: 1px solid rgba(102, 98, 98, 0.692);
+}
+.menu {
+  padding: 20px 10px;
+}
+
+/* Menu */
+
+main {
+  width: 100%;
+  height: auto;
+  margin: 120px auto;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 70px;
+  color: #fff;
+}
+
+#central {
+  width: 100%;
+  height: 70vh;
+  margin-top: -50px;
+  background-image: url("../img/central1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ccc;
+  padding-top: 300px;
+  padding-left: 20px;
+  padding-right: 50px;
+  text-align: center;
+}
+#central h2{
+  text-align: center;
+}
+
+.descricao > h2,
+.descricao > p {
+  margin: 15px auto;
+}
+
+.descricao h2 {
+  text-transform: capitalize;
+}
+
+.descricao button {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container-row {
+  width: 95vw;
+  height: 380px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: grid;
+  grid-template-columns: repeat(16, 200px);
+  grid-template-rows: 1;
+  grid-auto-flow: dense;
+  padding: 25px;
+
+  margin: 30px auto;
+
+  grid-gap: 15px;
+  justify-content: space-between;
+}
+
+.container-row::-webkit-scrollbar {
+  width: 1px;
+}
+
+.container-row::-webkit-scrollbar-track {
+  background-color: #9e2a2b;
+  border-radius: 8px;
+}
+
+.container-row::-webkit-scrollbar-thumb {
+  background: #540b0e;
+  border: 1px solid #a11618;
+  border-radius: 8px;
+}
+
+.filme {
+  width: 180px;
+  height: 270px;
+  font-size: 1em;
+  border-radius: 5px;
+  padding: 15px auto;
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: 0.5rem;
+  margin: 15px 0;
+  background-color: firebrick;
+  display: flex;
+  align-items: flex-end;
+  transform: scale(1);
+  transition: background-color, 0.3s, color, 0.5s;
+}
+
+.botao {
+  font-size: 1em;
+  opacity: 1;
+  background-color: #fff;
+  border: none;
+  padding: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-art {
+  width: 100%;
+  height: 90px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  padding: 10px;
+  transition: 0.3s ease all;
+  font-size: 0.6rem;
+}
+
+.footer-art .botao {
+  /* width: 50%; */
+  opacity: 1;
+  transition: 0.3s ease all;
+  font-size: 0.5rem;
+  margin: 10px 5px;
+  padding: 5px;
+}
+
+.filme:active .footer-art,
+.filme:hover .footer-art {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filme:active,
+.filme:hover,
+.botao:active,
+.botao:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.filme:hover {
+  border: rgb(255, 155, 5) solid thin;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+.f1 {
+  background-image: url("../img/Filmes/FILME\ ANA\ E\ VITORIA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f2 {
+  background-image: url("../img/Filmes/FILME\ AQUARIUS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f3 {
+  background-image: url("../img/Filmes/FILME\ COMO\ NOSSOS\ PAIS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f4 {
+  background-image: url("../img/Filmes/FILME\ DESPERTAR.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f5 {
+  background-image: url("../img/Filmes/FILME\ LA\ HISTORIA\ OFICIAL.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f6 {
+  background-image: url("../img/Filmes/FILME\ MI\ OBRA\ MAESTRA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f7 {
+  background-image: url("../img/Filmes/FILME\ MINHA\ MAE\ E\ UMA\ PECA\ 2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f8 {
+  background-image: url("../img/Filmes/FILME\ MINHA\ MÃE\ É\ UMA\ PECA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f9 {
+  background-image: url("../img/Filmes/FILME\ MUSSUM.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f10 {
+  background-image: url("../img/Filmes/FILME\ O\ FILME\ DA\ MINHA\ VIDA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f11 {
+  background-image: url("../img/Filmes/FILME\ O\ NO\ DO\ DIABO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f12 {
+  background-image: url("../img/Filmes/FILME\ PASSAROS\ DE\ VERAO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f13 {
+  background-image: url("../img/Filmes/FILME\ TAPETE\ VERMELHO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f14 {
+  background-image: url("../img/Filmes/FILME\ TIM\ MAIA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f15 {
+  background-image: url("../img/Filmes/FILME\ TROPA\ DE\ ELITE.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f16 {
+  background-image: url("../img/Filmes/FILME\ WHISKY.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f17 {
+  background-image: url("../img/Filmes/LA\ MEMORIA\ DEL\ AGUA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f18 {
+  background-image: url("../img/Series/SERIE-REI-DO-GADO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f19 {
+  background-image: url("../img/Series/SERIE\ GO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f20 {
+  background-image: url("../img/Series/SERIE\ HACKERS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f21 {
+  background-image: url("../img/Series/SERIE\ IMPUROS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f22 {
+  background-image: url("../img/Series/SERIE\ IRMANDADE.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f23 {
+  background-image: url("../img/Series/SERIE\ IRMÃO\ DO\ JOREL.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f24 {
+  background-image: url("../img/Series/SERIE\ KALLYS\ MASHUP.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f25 {
+  background-image: url("../img/Series/SERIE\ SENOR\ DOS\ CIELOS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f26 {
+  background-image: url("../img/Series/SERIE\ SENORA\ ACERO.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f27 {
+  background-image: url("../img/Series/SERIE\ SHARK\ TANK\ BRASIL.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f28 {
+  background-image: url("../img/Series/SERIE\ SOY\ LUNA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f29 {
+  background-image: url("../img/Series/SERIE\ TAPAS\ E\ BEIJOS.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f30 {
+  background-image: url("../img/Series/SERIE\ VAI\ QUE\ COLA.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*Media screen and presentations*/
+
+/*Retrato*/
+
+/*RETIREI O AND PORTRAIT POIS ESTAVA DANDO CONFLITO NAS CONFIGURAÇÕES*/
+
+@media screen and (max-width: 481px){
+  #central {
+    padding-top: 350px;
+  }
+
+  #central button {
+    margin-right: 0 35px;
+  }
+
+  h2 {
+    margin-top: 70px;
+  }
+
+  .logo-login > #logo {
+    width: 300px;
+  }
+
+  .filme {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #central {
+    padding-top: 350px; /*DAMARES - AUMENTEI PARA DESCER O TEXTO*/
+    background-image: url("../img/central1.jpg");
+    background-position: top;
+    margin-top: -50px; /*DAMARES - ACRESCENTEI PARA ALINHAR E SUBIR A IMAGEM ATÉ O HEADER*/
+  }
+
+  .container-row {
+    padding: 30px;
+    height: 400px;
+    grid-template-columns: repeat(16, 230px);
+  }
+
+  h2 {
+    margin-top: 70px;
+  }
+
+  .logo-login > #logo {
+    width: 300px;
+  }
+
+  .filme {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 769px){
+
+  #central {
+    padding-right: 100px;
+    padding-left: 30px;
+    padding-top: 400px;
+    background-image: url("../img/central2.jpg");
+    background-position: top;
+    margin-top: ; /*DAMARES - ACRESCENTEI PARA ALINHAR E SUBIR A IMAGEM ATÉ O HEADER*/
+  }
+
+  h2 {
+    margin-top: 70px;
+  }
+
+  .container-row {
+    padding: 30px;
+    height: 400px;
+    grid-template-columns: repeat(16, 230px);
+  }
+
+  .logo-login {
+    height: 80px; 
+  }
+
+  #mobile{
+    margin-top: 10px; /*DAMARES - ACRESCENTEI*/
+  }
+}
+
+
+
+@media screen and (min-width: 1280px) {
+  #central {
+    padding-right: 550px;
+    background-image: url("../img/central3.jpg");
+    background-position: top;
+    margin-top: -30px; /*DAMARES - COLOQUEI MARGIN NEGATIVO PARA SUBIR A IMAGEM*/
+    padding-top: 300px;
+    text-align: left;
+  }
+  #central h2{
+    text-align: left; /*DAMARES- ALTEREI DE LEFT PRA CENTER E ASSIM CENTRALIZAR O TEXTO*/
+  }
+
+  h2 {
+    margin-top: 70px;
+  } 
+
+  #desktop {
+    display: flex;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  label > img {
+    display: none;
+  }
+
+  .filme {
+    width: 280px;
+    height: 370px;
+    font-size: 0.7rem;
+  }
+
+  .botao {
+    font-size: 1.3rem; /*DAMRES - DIMINUI UM POUCO O TAMANHO DA FONTE DE 1.5 PARA 1.3*/
+  }
+
+  .container-row {
+    padding: 35px;
+    height: 500px;
+    grid-template-columns: repeat(16, 320px);
+  }
+
+  .logo-login {
+    height: 90px; /*para o header ficar um pouco mais largo e caber o menu melhor no desktop*/
+  }
+  /*ajustes para o banner*/
+  .descricao > h2,
+  .descricao > p {
+    margin: 30px 0;
+  }
+  .descricao h2 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+  }
+  .descricao p {
+    font-size: 1.2rem;
+    margin-right: 30%; /*DAMARES - ACRESCENTEI */
+  }
+  button.botao{
+    margin: 7px;
+    padding: 5px; /*DAMARES - ACRESCENTEI */
+  }
+}
+

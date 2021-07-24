@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script
+        src="https://kit.fontawesome.com/ecae119fbf.js"
+        crossorigin="anonymous"
+    ></script>
+    <title>Sudaca - Login</title>
+</head>
+<body>
+    <header>
+        <div class="menu-mobile">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">
+            <img id="menu" src="img/menu.svg" alt="icone de menu">
+            </label>
+            <div class="logo-login">
+                <img src="img/logo.png" alt="logo-sudaka-filmes" id="logo">
+                <img src="img/lupa.svg" alt="icone de uma lupa" id="busca">
+            </div>
+            <nav>
+                <ul>
+                    <li class="login"><a href="#"><img src="img/login.png" alt="icone de login"></a></li>
+                    <li class="login"><a href="#login-formulario">Login</a></li>
+                    <li class="login"><a href="#">Ajuda</a></li>
+                    <hr>
+                    <li class="menu"><a href="#sobre">Sobre</a></li>
+                    <li class="menu"><a href="#planos-container">Planos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="menu-desktop">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="./img/logo.png" alt="" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
+                    <li class="menu-item"><a href="#planos-container">Planos</a></li>
+                    <li class="menu-item"><a href="#login-formulario">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="fundo"  id="login-formulario">
+        <div class="fundo-imagem">
+            <div class="login-container">
+                    <h2>Login</h2>
+                    <form action="./home.html">
+                        <div class="login-input">
+                            <input type="email" name="email" id="email" placeholder="Digite seu email">
+                            <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                        </div>
+                        <div class="salvar-senha">
+                            <span>
+                                <input type="checkbox" name="salvar-senha" id="salvar">
+                                <label for="salvar">Lembre de mim</label>
+                            </span>
+                            <span><a href="http://#" target="_blank" rel="noopener noreferrer">Precisa de ajuda?</a>
+                            </span>
+                        </div>
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <div class="login-footer">
+                        <span>Ou entre com sua rede social</span>
+                        <div class="rede-social">
+                            <div class="rede-social facebook">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Entre com seu facebook
+                                </a>
+                            </div>
+                            <div class="rede-social google">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                    Entre com sua conta Google
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <div class="sobre-texto">
+                <h3>Sobre nós</h3>
+                <br>
+                <p>O SUDACA Filmes é um serviço de transmissão online que oferece uma ampla variedade de séries e filmes sulamericanos em milhares de aparelhos conectados à internet.</p>
+                <br>
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                <br>
+                <p>Mas, o que é SUDACA? Trata-se de uma expressão usada na Espanha para se referir aos sulamericanos. Em castelhano, América do Sul é “Sudamerica”, daí derivando a palavra “Sudaca”.</p>
+                <br>
+                <p>Usado como adjetivo pejorativo para menosprezar a cultura sulamericana, propomos uma apropriação do termo para que, assim, possamos afirmar: </p>
+                <br>
+                <p>SUCADAS sim, com muito orgulho de nossas cores e de nossa diversidade!</p> 
+                <br>
+                <p>Convidamos você para vê-las nas telinhas!</p>
+            </div>
+        </section>
+
+        <section class="planos-container" id="planos-container">
+            <div class="planos-grid">
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Basic</h3>
+                        <br>
+                        <h4>R$9,99/mês</h4>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Smartphones e tablets</li>
+                        <li>1 tela de cada vez</li>
+                        <li>Qualidade padrão</li>
+                        <li>Baixe até 5 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
+                </div>
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Padrão</h3>
+                        <h4>R$19,99/mês</h4>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Todos os seus dispositivos</li>
+                        <li>2 telas ao mesmo tempo</li>
+                        <li>Qualidade melhor</li>
+                        <li>Baixe até 5 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
+                </div>
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Premium</h3>
+                        <h4>R$29,99/mês</h4>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Todos os seus dispositivos</li>
+                        <li>4 telas ao mesmo tempo</li>
+                        <li>Alta definição e tecnologia 4k</li>
+                        <li>Baixe até 10 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
+                </div>
+            </div>
+        </sobre>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="icones-footer">
+                 <a href="https://pt-br.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                 <a href="https://www.instagram.com/sudaca.filmes/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                 <a href="https://twitter.com/login?lang=pt"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+             </div>
+ 
+             <ul class="user-links">
+                 <li>
+                     <a href="#">lorem  dolor sit</a>
+                 </li>
+                 <li> 
+                     <a href="#">ipsum dolor sit</a>
+                 </li>
+                 <li>
+                     <a href="">lorem ipsum  sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem  dolor sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem ipsum dolor sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem  dolor sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem ipsum dolor sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem ipsum dolor sit</a> 
+                 </li>
+                 <li>
+                     <a href="">lorem ipsum</a>  
+                 </li>
+             </ul>
+ 
+             <a href="#"><button class="button-footer">código de serviço</button></a>
+ 
+             <p>1997-2021 Sudaca Filmes, Inc.</p> 
+         </div>
+    </footer>
+</body>
+</html>
