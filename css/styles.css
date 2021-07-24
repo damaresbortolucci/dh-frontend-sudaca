@@ -78,7 +78,7 @@ input[type="checkbox"]:checked ~ nav {
   width: 60vw;
   height: 100%;
   left: -61vw;
-  position: absolute;
+  position: fixed;
   transition: all 0.5s;
   z-index: 2;
 }
@@ -520,7 +520,7 @@ footer p {
 
 @media screen and (max-width: 481px){
   #central {
-    padding-top: 350px;
+    padding-top: 35vh;
   }
 
   #central button {
